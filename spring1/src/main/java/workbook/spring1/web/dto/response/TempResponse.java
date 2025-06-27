@@ -1,4 +1,4 @@
-package workbook.spring1.web.dto;
+package workbook.spring1.web.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

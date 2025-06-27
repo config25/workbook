@@ -23,7 +23,7 @@ public class SocialLoggedIn {
     @Column(columnDefinition = "VARCHAR(20)")
     private SocialType socialType;
 
-
+    @Column
     private LocalDateTime expiredAt;
 
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
