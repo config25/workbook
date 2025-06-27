@@ -1,7 +1,7 @@
 package workbook.spring1.domain;
 
 import workbook.spring1.domain.common.BaseEntity;
-import workbook.spring1.domain.mapping.MemberMission;
+import workbook.spring1.domain.mapping.UserMission;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -33,6 +33,6 @@ public class Mission extends BaseEntity {
     private Store store;
 
     @OneToMany(mappedBy = "mission", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<MemberMission> memberMissionList = new ArrayList<>();
+    private List<UserMission> userMissionList = new ArrayList<>();
 
 }

@@ -1,6 +1,6 @@
 package workbook.spring1.converter;
 
-import workbook.spring1.web.dto.TempResponse;
+import workbook.spring1.web.dto.response.TempResponse;
 
 public class TempConverter {
 
