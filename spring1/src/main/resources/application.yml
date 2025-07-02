@@ -17,3 +17,11 @@ spring:
         hbm2ddl:
           auto: update # create update
         default_batch_fetch_size: 1000
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+  override-with-generic-response: false
