@@ -2,7 +2,7 @@ name: WORKBOOK Dev CI/CD # 머지용 주석
 
 on:
   pull_request:
-    types: [closed]
+    types: [closed] # 마지막 시도
   workflow_dispatch: # (2).수동 실행도 가능하도록
 
 jobs:
