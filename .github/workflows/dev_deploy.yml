@@ -25,8 +25,9 @@ jobs:
         shell: bash # (6).권한 부여
 
       - name: Build with Gradle
+        working-directory: ./spring1
         run: ./gradlew clean build -x test
-        shell: bash # (7).build시작
+        shell: bash # (7).build시작s
 
       - name: Get current time
         uses: 1466587594/get-current-time@v2
