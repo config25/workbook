@@ -1,4 +1,4 @@
-name: WORKBOOK Dev CI/CD # 도움요청
+name: WORKBOOK Dev CI/CD # 뭐가문제임
 
 on:
   pull_request:
