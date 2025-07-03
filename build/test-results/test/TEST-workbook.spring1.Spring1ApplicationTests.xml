@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="workbook.spring1.Spring1ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-25T06:26:12.252Z" hostname="0525GRAM" time="1.15">
+  <properties/>
+  <testcase name="contextLoads()" classname="workbook.spring1.Spring1ApplicationTests" time="1.15"/>
+  <system-out><![CDATA[15:25:57.139 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [workbook.spring1.Spring1ApplicationTests]: Spring1ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:25:57.516 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration workbook.spring1.Spring1Application for test class workbook.spring1.Spring1ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.3)
+
+2025-06-25T15:25:58.972+09:00  INFO 18720 --- [    Test worker] w.spring1.Spring1ApplicationTests        : Starting Spring1ApplicationTests using Java 17.0.12 with PID 18720 (started by yhkim0525 in C:\Users\yhkim\Desktop\spring1\spring1)
+2025-06-25T15:25:58.975+09:00  INFO 18720 --- [    Test worker] w.spring1.Spring1ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2025-06-25T15:26:01.761+09:00  INFO 18720 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-25T15:26:01.977+09:00  INFO 18720 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 190 ms. Found 2 JPA repository interfaces.
+2025-06-25T15:26:03.793+09:00  INFO 18720 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-25T15:26:04.093+09:00  INFO 18720 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-06-25T15:26:04.214+09:00  INFO 18720 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-25T15:26:04.999+09:00  INFO 18720 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-25T15:26:05.081+09:00  INFO 18720 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-25T15:26:05.635+09:00  INFO 18720 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ee095c9
+2025-06-25T15:26:05.642+09:00  INFO 18720 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-25T15:26:05.762+09:00  WARN 18720 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-25T15:26:05.768+09:00  WARN 18720 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-25T15:26:05.845+09:00  INFO 18720 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-25T15:26:08.819+09:00  INFO 18720 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    alter table inquiry 
+       modify column type enum ('QUESTION','REPORT') not null
+2025-06-25T15:26:09.155+09:00  INFO 18720 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-25T15:26:10.548+09:00  WARN 18720 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-25T15:26:12.205+09:00  INFO 18720 --- [    Test worker] w.spring1.Spring1ApplicationTests        : Started Spring1ApplicationTests in 14.129 seconds (process running for 17.949)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
