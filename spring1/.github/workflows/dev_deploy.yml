@@ -1,4 +1,4 @@
-name: WORKBOOK Dev CI/CD
+name: WORKBOOK Dev CI/CD # 마지막 시도라는 생각으로
 
 on:
   pull_request:
