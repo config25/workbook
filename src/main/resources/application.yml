@@ -18,6 +18,13 @@ spring:
           auto: update # create update
         default_batch_fetch_size: 1000
 
+  servlet:
+    multipart:
+      enabled: true
+      maxFileSize: 200MB
+      maxRequestSize: 300MB
+
+
 springdoc:
   api-docs:
     enabled: true
@@ -25,3 +32,5 @@ springdoc:
     enabled: true
     path: /swagger-ui.html
   override-with-generic-response: false
+
+
